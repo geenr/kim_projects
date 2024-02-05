@@ -7,9 +7,10 @@ int main(void)
 	string name[] = {"kim", "joan"};
 	string number[] = {"0705", "0703"};
 
-	string nam;
-	scanf("%s", &nam);
-	for (int i; i < 2; i++)
+	char nam[20];
+	printf("enter name ");
+	scanf("%s", nam);
+	for (int i = 0; i < 3; i++)
 	{
 		if (strcmp(name[i], nam) == 0)
 		{
@@ -17,6 +18,7 @@ int main(void)
 			return 0;
 		}
 		else
-			printf("not found");
+			printf("not found\n");
+		return 1;
 	}
 }
